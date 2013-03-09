@@ -20,7 +20,7 @@ public class TestLiveCellTransitions {
 
 	private final Cell expected;
 
-	@Parameters
+	@Parameters(name = "{index}: a live cell with {0} neighbours is {1} after transition")
 	public static Collection<Object[]> data() {
 		return Arrays.asList(new Object[][] { //
 				{ 0, DEAD }, //
